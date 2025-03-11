@@ -1,12 +1,10 @@
-# src/aggregator.py
-
 import time
 import json
 import os
 from datetime import datetime
 
 class EmotionAggregator:
-    def __init__(self, window_seconds=15 * 60, callback=None, save_path="emotion_data.json"):
+    def __init__(self, window_seconds=15 * 60, callback=None, save_path=os.path.join("../db", "emotion_data.json")):
         """
         window_seconds: Aggregation window duration (default 15 minutes; use a shorter window for testing).
         callback: A function to call with the aggregated results once the window is over.

@@ -1,286 +1,194 @@
-# src/realtime.py
-
 import os
-import json
 import cv2
 import time
 import numpy as np
 from PIL import Image, ImageTk
+import torch
 import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 from emotion_detector import EmotionDetector
+from facenet_pytorch import InceptionResnetV1
+from scipy.spatial.distance import cosine
 from aggregator import EmotionAggregator
 
-# Matplotlib imports
-from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-
-# ------------------ Scrollable Frame Class ------------------
-class ScrollableFrame(ttk.Frame):
-    def __init__(self, container, *args, **kwargs):
-        super().__init__(container, *args, **kwargs)
-        canvas = ttk.Canvas(self)
-        scrollbar = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
-        self.scrollable_frame = ttk.Frame(canvas)
-        self.scrollable_frame.bind(
-            "<Configure>",
-            lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
-        )
-        canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw")
-        canvas.configure(yscrollcommand=scrollbar.set)
-        canvas.pack(side="left", fill="both", expand=True)
-        scrollbar.pack(side="right", fill="y")
-        # Bind mouse wheel to scroll
-        self.bind_all("<MouseWheel>", lambda event: canvas.yview_scroll(int(-1*(event.delta/120)), "units"))
-
-# ------------------ Plot Drawing Functions ------------------
-def draw_bar(ax, data):
-    ax.cla()
-    emotions = list(data.keys())
-    values = [data[emotion] for emotion in emotions]
-    ax.bar(emotions, [v * 100 for v in values], color="skyblue")
-    ax.set_ylim(0, 100)
-    ax.set_ylabel("Percentage")
-
-def draw_line(ax, data):
-    ax.cla()
-    emotions = list(data.keys())
-    values = [data[emotion] for emotion in emotions]
-    ax.plot(emotions, [v * 100 for v in values], marker="o", color="green")
-    ax.set_ylim(0, 100)
-    ax.set_ylabel("Percentage")
-
-def draw_pie(ax, data):
-    ax.cla()
-    emotions = list(data.keys())
-    values = [data[emotion] for emotion in emotions]
-    ax.pie([v * 100 for v in values], labels=emotions, autopct='%1.1f%%', startangle=90)
-    ax.axis("equal")
-
-def draw_radar(ax, data):
-    ax.cla()
-    emotions = list(data.keys())
-    values = [data[emotion] for emotion in emotions]
-    N = len(emotions)
-    angles = np.linspace(0, 2 * np.pi, N, endpoint=False).tolist()
-    # Complete the loop
-    values += values[:1]
-    angles += angles[:1]
-    ax.set_theta_offset(np.pi / 2)
-    ax.set_theta_direction(-1)
-    ax.plot(angles, [v * 100 for v in values], color="magenta", linewidth=2)
-    ax.fill(angles, [v * 100 for v in values], color="magenta", alpha=0.25)
-    ax.set_thetagrids(np.degrees(angles[:-1]), emotions)
-    ax.set_ylim(0, 100)
-
-# Mapping of chart types to their drawing functions
-DRAW_FUNCS = {
-    "Bar": draw_bar,
-    "Line": draw_line,
-    "Pie": draw_pie,
-    "Radar": draw_radar
-}
-
-# ------------------ Main Application Class ------------------
 class App:
     def __init__(self, master):
         self.master = master
-        self.master.title("Live Emotion Detection")
-        self.master.geometry("700x900")
+        self.master.title("Live Emotion Detection - Personalized")
+        self.master.geometry("800x800")
         
-        # Use scrollable frame to hold all content
-        self.scrollable = ScrollableFrame(master)
-        self.scrollable.pack(fill="both", expand=True)
-        self.main_frame = self.scrollable.scrollable_frame
+        # UI Elements
+        self.status_label = ttk.Label(master, text="Initializing...", font=("Helvetica", 14))
+        self.status_label.pack(pady=10)
         
-        # Center-align all content
-        self.main_frame.columnconfigure(0, weight=1)
-        
-        # Video frame (centered)
-        self.video_frame = ttk.Frame(self.main_frame)
-        self.video_frame.grid(row=0, column=0, pady=10, sticky="nsew")
-        self.video_label = ttk.Label(self.video_frame)
+        self.video_label = ttk.Label(master)
         self.video_label.pack()
         
-        # Current emotion label (centered)
-        self.current_emotion_label = ttk.Label(self.main_frame, text="Current Emotion: None", font=("Helvetica", 16))
-        self.current_emotion_label.grid(row=1, column=0, pady=10)
+        self.current_emotion_label = ttk.Label(master, text="Current Emotion: None", font=("Helvetica", 16))
+        self.current_emotion_label.pack(pady=10)
         
-        # Aggregated text label (centered)
-        self.aggregated_label = ttk.Label(self.main_frame, text="Aggregated Emotion Confidence (Last Window):", font=("Helvetica", 12), justify="center")
-        self.aggregated_label.grid(row=2, column=0, pady=10)
+        self.capture_button = ttk.Button(master, text="Capture Reference Frame", command=self.capture_reference_frame)
+        # This button is only visible if no reference embedding is found.
         
-        # Container for charts
-        self.charts_container = ttk.Frame(self.main_frame)
-        self.charts_container.grid(row=3, column=0, pady=10)
+        self.quit_button = ttk.Button(master, text="Quit", command=self.quit_app, bootstyle="danger")
+        self.quit_button.pack(pady=10)
         
-        # Chart types to display simultaneously
-        self.chart_types = ["Bar", "Line", "Pie", "Radar"]
-        # Dictionary to store chart figures and canvases
-        # Structure: {chart_type: {"last": {"fig":, "ax":, "canvas":}, "overall": {...} } }
-        self.chart_dict = {}
-        current_row = 0
-        for ctype in self.chart_types:
-            # Create a frame row for each chart type
-            row_frame = ttk.Frame(self.charts_container)
-            row_frame.pack(pady=10)
-            # Label for the chart type
-            title_label = ttk.Label(row_frame, text=f"{ctype} Chart", font=("Helvetica", 14))
-            title_label.pack(pady=5)
-            
-            # Create a container for the two charts (Last Window and Overall) side by side
-            charts_pair_frame = ttk.Frame(row_frame)
-            charts_pair_frame.pack()
-            
-            # Last Window Chart
-            last_frame = ttk.Frame(charts_pair_frame)
-            last_frame.pack(side=LEFT, padx=20)
-            fig_last = Figure(figsize=(3, 2.5), dpi=100)
-            if ctype == "Radar":
-                ax_last = fig_last.add_subplot(111, polar=True)
-            else:
-                ax_last = fig_last.add_subplot(111)
-            ax_last.set_title("Last Window")
-            canvas_last = FigureCanvasTkAgg(fig_last, master=last_frame)
-            canvas_last.get_tk_widget().pack()
-            
-            # Overall Chart
-            overall_frame = ttk.Frame(charts_pair_frame)
-            overall_frame.pack(side=LEFT, padx=20)
-            fig_overall = Figure(figsize=(3, 2.5), dpi=100)
-            if ctype == "Radar":
-                ax_overall = fig_overall.add_subplot(111, polar=True)
-            else:
-                ax_overall = fig_overall.add_subplot(111)
-            ax_overall.set_title("Overall")
-            canvas_overall = FigureCanvasTkAgg(fig_overall, master=overall_frame)
-            canvas_overall.get_tk_widget().pack()
-            
-            # Save in chart_dict
-            self.chart_dict[ctype] = {
-                "last": {"fig": fig_last, "ax": ax_last, "canvas": canvas_last},
-                "overall": {"fig": fig_overall, "ax": ax_overall, "canvas": canvas_overall}
-            }
-            current_row += 1
-        
-        # Quit button (centered)
-        self.quit_button = ttk.Button(self.main_frame, text="Quit", command=self.quit_app, bootstyle="danger")
-        self.quit_button.grid(row=4, column=0, pady=10)
-        
-        # Load the emotion detector (model and MTCNN)
-        model_path = os.path.join("..", "model", "efficientnet_b2_emotion_model.pth")
-        self.detector = EmotionDetector(model_path)
-        
-        # Initialize the aggregator (window_seconds set to 30 for testing; adjust as needed)
-        self.aggregator = EmotionAggregator(window_seconds=30, callback=self.update_aggregated)
-        
-        # Initialize cumulative overall statistics
-        self.overall_emotion_sum = {emotion: 0 for emotion in self.detector.emotion_classes}
-        self.overall_count = 0
-        
-        # Start video capture
+        # Video Capture
         self.cap = cv2.VideoCapture(0)
         if not self.cap.isOpened():
             raise ValueError("Unable to open webcam.")
-        self.delay = 30  # Delay in milliseconds between frames
         
-        # Begin the update loop
+        # Load Emotion Detector
+        model_path = os.path.join("../model", "efficientnet_b2_emotion_model.pth")
+        self.detector = EmotionDetector(model_path)
+        
+        # Initialize Aggregator: Aggregate emotions every 30 seconds (testing window)
+        self.aggregator = EmotionAggregator(window_seconds=30, save_path=os.path.join("../db", "emotion_data.json"))
+        
+        # --- Personalization Setup ---
+        # Ensure assets folder exists
+        self.assets_dir = os.path.join("assets")
+        if not os.path.exists(self.assets_dir):
+            os.makedirs(self.assets_dir)
+        # Reference frames folder inside assets
+        self.reference_folder = os.path.join(self.assets_dir, "reference-face-frames-collect")
+        if not os.path.exists(self.reference_folder):
+            os.makedirs(self.reference_folder)
+        # Average embedding file (stored in assets)
+        self.embedding_file = os.path.join(self.assets_dir, "average_embedding.npy")
+        
+        self.reference_embedding = None
+        self.num_reference_frames_required = 5
+        self.reference_embeddings = []
+        self.similarity_threshold = 0.6
+        self.ready_for_detection = False
+        
+        # Initialize FaceNet (for reference embedding) on the same device as the emotion detector
+        self.facenet = InceptionResnetV1(pretrained="casia-webface").eval().to(self.detector.device)
+        
+        # Check if the average embedding already exists
+        if os.path.exists(self.embedding_file):
+            self.reference_embedding = np.load(self.embedding_file)
+            self.status_label.config(text="Reference embedding loaded. Ready for emotion detection.")
+            self.ready_for_detection = True
+        else:
+            self.status_label.config(text="No reference embedding found. Please capture reference frames.")
+            self.capture_button.pack(pady=10)
+        
+        self.delay = 30  # Milliseconds between frames
         self.update()
+        
+    def get_face_embedding(self, pil_image):
+        """
+        Uses MTCNN to crop the face from the provided PIL image
+        and computes a 512-dim embedding using FaceNet.
+        Returns None if no face is detected.
+        """
+        img_cropped = self.detector.mtcnn(pil_image)
+
+        if img_cropped is None:  # Face detection failed
+            print("[WARNING] No face detected in frame!")
+            return None  # Return None to avoid crashing
+
+        if img_cropped.ndim == 3:
+            img_cropped = img_cropped.unsqueeze(0)
+
+        img_cropped = img_cropped.to(self.detector.device)
+
+        with torch.no_grad():
+            embedding = self.facenet(img_cropped).detach().cpu().numpy().flatten()
+
+        return embedding if embedding.shape[0] == 512 else None
+    
+    def capture_reference_frame(self):
+        """
+        Captures a frame from the webcam, computes its face embedding,
+        saves the frame to the reference folder, and adds the embedding to a list.
+        Once enough frames are captured, computes and saves the average embedding.
+        """
+        ret, frame = self.cap.read()
+        if not ret:
+            self.status_label.config(text="Error capturing frame. Try again.")
+            return
+        pil_image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+        embedding = self.get_face_embedding(pil_image)
+        if embedding is not None:
+            self.reference_embeddings.append(embedding)
+            count = len(self.reference_embeddings)
+            self.status_label.config(text=f"Captured {count}/{self.num_reference_frames_required} reference frames.")
+            # Save the captured frame to the reference folder
+            timestamp = int(time.time())
+            filename = os.path.join(self.reference_folder, f"ref_{timestamp}.jpg")
+            cv2.imwrite(filename, frame)
+            if count >= self.num_reference_frames_required:
+                avg_embedding = np.mean(self.reference_embeddings, axis=0)
+                np.save(self.embedding_file, avg_embedding)
+                self.reference_embedding = avg_embedding
+                self.ready_for_detection = True
+                self.status_label.config(text="Reference embedding captured. Ready for emotion detection.")
+                self.capture_button.pack_forget()
+        else:
+            self.status_label.config(text="No face detected in captured frame. Try again.")
     
     def update(self):
         ret, frame = self.cap.read()
         if ret:
-            # Get detected faces and emotion predictions
-            results = self.detector.detect_and_predict(frame)
-            if results:
-                # Average predictions if more than one face is detected
-                emotion_sum = {emotion: 0 for emotion in self.detector.emotion_classes}
-                for (_, emotion_dict) in results:
-                    for emotion, prob in emotion_dict.items():
-                        emotion_sum[emotion] += prob
-                n = len(results)
-                avg_emotion = {emotion: emotion_sum[emotion] / n for emotion in emotion_sum}
-                
-                # Determine the highest-probability emotion for display
-                current_emotion = max(avg_emotion, key=avg_emotion.get)
-                confidence = avg_emotion[current_emotion]
-                self.current_emotion_label.config(text=f"Current Emotion: {current_emotion} ({confidence * 100:.2f}%)")
-                
-                # Add averaged emotion to aggregator (which triggers chart updates)
-                self.aggregator.add_emotion(avg_emotion)
-                
-                # Draw bounding boxes and labels for each detected face
-                for (box, emotion_dict) in results:
-                    x1, y1, x2, y2 = box
-                    cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
-                    label = f"{max(emotion_dict, key=emotion_dict.get)} ({emotion_dict[max(emotion_dict, key=emotion_dict.get)] * 100:.2f}%)"
-                    cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
-            else:
-                self.current_emotion_label.config(text="Current Emotion: No face detected")
-            
-            # Convert frame (BGR to RGB) and display in GUI
+            if self.ready_for_detection:
+                results = self.detector.detect_and_predict(frame)  # Detect faces and predict emotions
+                processed = False  # Track if any recognized face was processed
+
+                if results:  # If at least one face is detected
+                    best_face = None
+                    best_similarity = 0
+
+                    for (box, emotion_dict) in results:
+                        x1, y1, x2, y2 = box
+                        face_roi = frame[y1:y2, x1:x2]
+
+                        if face_roi.size != 0:  # Ensure a valid face region
+                            pil_face = Image.fromarray(cv2.cvtColor(face_roi, cv2.COLOR_BGR2RGB))
+                            face_embedding = self.get_face_embedding(pil_face)
+
+                            if face_embedding is not None:
+                                similarity = 1 - cosine(face_embedding, self.reference_embedding)
+
+                                if similarity > self.similarity_threshold and similarity > best_similarity:
+                                    best_face = (x1, y1, x2, y2, emotion_dict, similarity)
+                                    best_similarity = similarity  # Keep track of the best-matching face
+
+                    if best_face:  # If we found a valid matching face, process it
+                        x1, y1, x2, y2, emotion_dict, similarity = best_face
+                        current_emotion = max(emotion_dict, key=emotion_dict.get)
+                        confidence = emotion_dict[current_emotion]
+
+                        label = f"YOU - {current_emotion} ({confidence*100:.2f}%)"
+                        self.current_emotion_label.config(text=f"Current Emotion: {current_emotion} ({confidence*100:.2f}%)")
+
+                        cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)  # Draw box on recognized face
+                        cv2.putText(frame, label, (x1, y1 - 10),
+                                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+
+                        # Aggregate the recognized face's emotions
+                        self.aggregator.add_emotion(emotion_dict)
+                        processed = True
+
+                if not processed:
+                    self.current_emotion_label.config(text="Current Emotion: No recognized face")
+
+            # Update the video feed in the GUI
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             img = Image.fromarray(rgb_frame)
             imgtk = ImageTk.PhotoImage(image=img)
             self.video_label.imgtk = imgtk  # Prevent garbage collection
             self.video_label.config(image=imgtk)
-        self.master.after(self.delay, self.update)
-    
-    def update_aggregated(self, aggregated_dict):
-        """
-        Callback for aggregator.
-        Updates the aggregated text label and all chart pairs.
-        """
-        # Update aggregated text label
-        with open("emotion_data.json", "r") as file:
-            data = json.load(file)
 
-        latest_entry = data[-1]
-        text = f"Latest Aggregated Emotions (Time: {latest_entry['timestamp']}):\n"
-        for emotion, value in latest_entry["aggregated_emotions"].items():
-            text += f"{emotion}: {value * 100:.2f}%\n"
-        self.aggregated_label.config(text=text)
-        
-        # Update overall cumulative stats
-        self.overall_count += 1
-        for emotion in aggregated_dict:
-            self.overall_emotion_sum[emotion] += aggregated_dict[emotion]
-        overall_avg = {emotion: self.overall_emotion_sum[emotion] / self.overall_count for emotion in self.overall_emotion_sum}
-        
-        # For each chart type, update both the last window and overall charts
-        for ctype in self.chart_types:
-            draw_func = DRAW_FUNCS[ctype]
-            # Update last window chart
-            ax_last = self.chart_dict[ctype]["last"]["ax"]
-            fig_last = self.chart_dict[ctype]["last"]["fig"]
-            # For radar charts, ensure polar projection; otherwise standard axis
-            if ctype == "Radar":
-                fig_last.clf()
-                ax_last = fig_last.add_subplot(111, polar=True)
-                self.chart_dict[ctype]["last"]["ax"] = ax_last
-            draw_func(ax_last, aggregated_dict)
-            ax_last.set_title(f"Last Window - {ctype}")
-            fig_last.tight_layout()
-            self.chart_dict[ctype]["last"]["canvas"].draw()
-            
-            # Update overall chart
-            ax_overall = self.chart_dict[ctype]["overall"]["ax"]
-            fig_overall = self.chart_dict[ctype]["overall"]["fig"]
-            if ctype == "Radar":
-                fig_overall.clf()
-                ax_overall = fig_overall.add_subplot(111, polar=True)
-                self.chart_dict[ctype]["overall"]["ax"] = ax_overall
-            draw_func(ax_overall, overall_avg)
-            ax_overall.set_title(f"Overall - {ctype}")
-            fig_overall.tight_layout()
-            self.chart_dict[ctype]["overall"]["canvas"].draw()
+        self.master.after(self.delay, self.update)  # Schedule the next frame update
     
     def quit_app(self):
         self.cap.release()
         self.master.destroy()
 
 if __name__ == "__main__":
-    # Create a ttkbootstrap window with the dark theme
     root = ttk.Window(themename="darkly")
     app = App(root)
     root.mainloop()
