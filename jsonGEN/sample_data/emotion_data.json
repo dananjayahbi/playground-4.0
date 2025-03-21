@@ -1,0 +1,2342 @@
+[
+    {
+        "timestamp": "2025-03-17 20:00:00",
+        "aggregated_emotions": {
+            "Anger": 0.062,
+            "Fear": 0.121,
+            "Happy": 0.104,
+            "Neutral": 0.111,
+            "Sad": 0.445,
+            "Surprise": 0.157
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:01:00",
+        "aggregated_emotions": {
+            "Anger": 0.04,
+            "Fear": 0.125,
+            "Happy": 0.193,
+            "Neutral": 0.08,
+            "Sad": 0.467,
+            "Surprise": 0.095
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:02:00",
+        "aggregated_emotions": {
+            "Anger": 0.134,
+            "Fear": 0.1,
+            "Happy": 0.141,
+            "Neutral": 0.087,
+            "Sad": 0.433,
+            "Surprise": 0.105
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:03:00",
+        "aggregated_emotions": {
+            "Anger": 0.159,
+            "Fear": 0.016,
+            "Happy": 0.155,
+            "Neutral": 0.022,
+            "Sad": 0.553,
+            "Surprise": 0.095
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:04:00",
+        "aggregated_emotions": {
+            "Anger": 0.26,
+            "Fear": 0.034,
+            "Happy": 0.062,
+            "Neutral": 0.088,
+            "Sad": 0.527,
+            "Surprise": 0.029
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:05:00",
+        "aggregated_emotions": {
+            "Anger": 0.128,
+            "Fear": 0.001,
+            "Happy": 0.131,
+            "Neutral": 0.155,
+            "Sad": 0.488,
+            "Surprise": 0.097
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:06:00",
+        "aggregated_emotions": {
+            "Anger": 0.061,
+            "Fear": 0.204,
+            "Happy": 0.055,
+            "Neutral": 0.194,
+            "Sad": 0.439,
+            "Surprise": 0.047
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:07:00",
+        "aggregated_emotions": {
+            "Anger": 0.076,
+            "Fear": 0.147,
+            "Happy": 0.034,
+            "Neutral": 0.14,
+            "Sad": 0.544,
+            "Surprise": 0.059
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:08:00",
+        "aggregated_emotions": {
+            "Anger": 0.101,
+            "Fear": 0.102,
+            "Happy": 0.094,
+            "Neutral": 0.045,
+            "Sad": 0.557,
+            "Surprise": 0.101
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:09:00",
+        "aggregated_emotions": {
+            "Anger": 0.011,
+            "Fear": 0.031,
+            "Happy": 0.121,
+            "Neutral": 0.054,
+            "Sad": 0.56,
+            "Surprise": 0.223
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:10:00",
+        "aggregated_emotions": {
+            "Anger": 0.012,
+            "Fear": 0.056,
+            "Happy": 0.123,
+            "Neutral": 0.162,
+            "Sad": 0.517,
+            "Surprise": 0.13
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:11:00",
+        "aggregated_emotions": {
+            "Anger": 0.166,
+            "Fear": 0.224,
+            "Happy": 0.023,
+            "Neutral": 0.154,
+            "Sad": 0.414,
+            "Surprise": 0.019
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:12:00",
+        "aggregated_emotions": {
+            "Anger": 0.017,
+            "Fear": 0.142,
+            "Happy": 0.071,
+            "Neutral": 0.208,
+            "Sad": 0.476,
+            "Surprise": 0.086
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:13:00",
+        "aggregated_emotions": {
+            "Anger": 0.198,
+            "Fear": 0.096,
+            "Happy": 0.169,
+            "Neutral": 0.018,
+            "Sad": 0.463,
+            "Surprise": 0.056
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:14:00",
+        "aggregated_emotions": {
+            "Anger": 0.149,
+            "Fear": 0.087,
+            "Happy": 0.057,
+            "Neutral": 0.118,
+            "Sad": 0.437,
+            "Surprise": 0.152
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:15:00",
+        "aggregated_emotions": {
+            "Anger": 0.073,
+            "Fear": 0.13,
+            "Happy": 0.085,
+            "Neutral": 0.016,
+            "Sad": 0.59,
+            "Surprise": 0.106
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:16:00",
+        "aggregated_emotions": {
+            "Anger": 0.079,
+            "Fear": 0.179,
+            "Happy": 0.047,
+            "Neutral": 0.137,
+            "Sad": 0.483,
+            "Surprise": 0.075
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:17:00",
+        "aggregated_emotions": {
+            "Anger": 0.13,
+            "Fear": 0.011,
+            "Happy": 0.107,
+            "Neutral": 0.153,
+            "Sad": 0.482,
+            "Surprise": 0.117
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:18:00",
+        "aggregated_emotions": {
+            "Anger": 0.104,
+            "Fear": 0.056,
+            "Happy": 0.132,
+            "Neutral": 0.116,
+            "Sad": 0.554,
+            "Surprise": 0.038
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:19:00",
+        "aggregated_emotions": {
+            "Anger": 0.158,
+            "Fear": 0.023,
+            "Happy": 0.183,
+            "Neutral": 0.157,
+            "Sad": 0.431,
+            "Surprise": 0.048
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:20:00",
+        "aggregated_emotions": {
+            "Anger": 0.085,
+            "Fear": 0.138,
+            "Happy": 0.047,
+            "Neutral": 0.145,
+            "Sad": 0.436,
+            "Surprise": 0.149
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:21:00",
+        "aggregated_emotions": {
+            "Anger": 0.02,
+            "Fear": 0.168,
+            "Happy": 0.132,
+            "Neutral": 0.031,
+            "Sad": 0.492,
+            "Surprise": 0.157
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:22:00",
+        "aggregated_emotions": {
+            "Anger": 0.191,
+            "Fear": 0.002,
+            "Happy": 0.255,
+            "Neutral": 0.013,
+            "Sad": 0.534,
+            "Surprise": 0.005
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:23:00",
+        "aggregated_emotions": {
+            "Anger": 0.064,
+            "Fear": 0.072,
+            "Happy": 0.073,
+            "Neutral": 0.151,
+            "Sad": 0.464,
+            "Surprise": 0.176
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:24:00",
+        "aggregated_emotions": {
+            "Anger": 0.077,
+            "Fear": 0.043,
+            "Happy": 0.086,
+            "Neutral": 0.124,
+            "Sad": 0.598,
+            "Surprise": 0.072
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:25:00",
+        "aggregated_emotions": {
+            "Anger": 0.045,
+            "Fear": 0.166,
+            "Happy": 0.116,
+            "Neutral": 0.16,
+            "Sad": 0.455,
+            "Surprise": 0.058
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:26:00",
+        "aggregated_emotions": {
+            "Anger": 0.083,
+            "Fear": 0.129,
+            "Happy": 0.05,
+            "Neutral": 0.133,
+            "Sad": 0.563,
+            "Surprise": 0.042
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:27:00",
+        "aggregated_emotions": {
+            "Anger": 0.098,
+            "Fear": 0.164,
+            "Happy": 0.02,
+            "Neutral": 0.116,
+            "Sad": 0.511,
+            "Surprise": 0.091
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:28:00",
+        "aggregated_emotions": {
+            "Anger": 0.04,
+            "Fear": 0.028,
+            "Happy": 0.246,
+            "Neutral": 0.133,
+            "Sad": 0.474,
+            "Surprise": 0.079
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:29:00",
+        "aggregated_emotions": {
+            "Anger": 0.029,
+            "Fear": 0.013,
+            "Happy": 0.147,
+            "Neutral": 0.139,
+            "Sad": 0.553,
+            "Surprise": 0.119
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:30:00",
+        "aggregated_emotions": {
+            "Anger": 0.114,
+            "Fear": 0.116,
+            "Happy": 0.005,
+            "Neutral": 0.062,
+            "Sad": 0.55,
+            "Surprise": 0.153
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:31:00",
+        "aggregated_emotions": {
+            "Anger": 0.054,
+            "Fear": 0.041,
+            "Happy": 0.038,
+            "Neutral": 0.199,
+            "Sad": 0.558,
+            "Surprise": 0.11
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:32:00",
+        "aggregated_emotions": {
+            "Anger": 0.212,
+            "Fear": 0.064,
+            "Happy": 0.19,
+            "Neutral": 0.034,
+            "Sad": 0.48,
+            "Surprise": 0.02
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:33:00",
+        "aggregated_emotions": {
+            "Anger": 0.112,
+            "Fear": 0.092,
+            "Happy": 0.07,
+            "Neutral": 0.128,
+            "Sad": 0.465,
+            "Surprise": 0.133
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:34:00",
+        "aggregated_emotions": {
+            "Anger": 0.059,
+            "Fear": 0.158,
+            "Happy": 0.057,
+            "Neutral": 0.181,
+            "Sad": 0.452,
+            "Surprise": 0.093
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:35:00",
+        "aggregated_emotions": {
+            "Anger": 0.161,
+            "Fear": 0.163,
+            "Happy": 0.109,
+            "Neutral": 0.023,
+            "Sad": 0.506,
+            "Surprise": 0.038
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:36:00",
+        "aggregated_emotions": {
+            "Anger": 0.089,
+            "Fear": 0.164,
+            "Happy": 0.132,
+            "Neutral": 0.07,
+            "Sad": 0.498,
+            "Surprise": 0.047
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:37:00",
+        "aggregated_emotions": {
+            "Anger": 0.135,
+            "Fear": 0.116,
+            "Happy": 0.025,
+            "Neutral": 0.171,
+            "Sad": 0.487,
+            "Surprise": 0.066
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:38:00",
+        "aggregated_emotions": {
+            "Anger": 0.162,
+            "Fear": 0.005,
+            "Happy": 0.011,
+            "Neutral": 0.161,
+            "Sad": 0.504,
+            "Surprise": 0.157
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:39:00",
+        "aggregated_emotions": {
+            "Anger": 0.128,
+            "Fear": 0.255,
+            "Happy": 0.072,
+            "Neutral": 0.048,
+            "Sad": 0.412,
+            "Surprise": 0.085
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:40:00",
+        "aggregated_emotions": {
+            "Anger": 0.203,
+            "Fear": 0.188,
+            "Happy": 0.084,
+            "Neutral": 0.024,
+            "Sad": 0.472,
+            "Surprise": 0.029
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:41:00",
+        "aggregated_emotions": {
+            "Anger": 0.095,
+            "Fear": 0.108,
+            "Happy": 0.086,
+            "Neutral": 0.038,
+            "Sad": 0.569,
+            "Surprise": 0.104
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:42:00",
+        "aggregated_emotions": {
+            "Anger": 0.125,
+            "Fear": 0.137,
+            "Happy": 0.147,
+            "Neutral": 0.004,
+            "Sad": 0.55,
+            "Surprise": 0.037
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:43:00",
+        "aggregated_emotions": {
+            "Anger": 0.128,
+            "Fear": 0.107,
+            "Happy": 0.016,
+            "Neutral": 0.044,
+            "Sad": 0.592,
+            "Surprise": 0.113
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:44:00",
+        "aggregated_emotions": {
+            "Anger": 0.116,
+            "Fear": 0.01,
+            "Happy": 0.139,
+            "Neutral": 0.158,
+            "Sad": 0.407,
+            "Surprise": 0.17
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:45:00",
+        "aggregated_emotions": {
+            "Anger": 0.184,
+            "Fear": 0.098,
+            "Happy": 0.033,
+            "Neutral": 0.074,
+            "Sad": 0.501,
+            "Surprise": 0.11
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:46:00",
+        "aggregated_emotions": {
+            "Anger": 0.079,
+            "Fear": 0.102,
+            "Happy": 0.088,
+            "Neutral": 0.194,
+            "Sad": 0.407,
+            "Surprise": 0.13
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:47:00",
+        "aggregated_emotions": {
+            "Anger": 0.184,
+            "Fear": 0.198,
+            "Happy": 0.034,
+            "Neutral": 0.051,
+            "Sad": 0.496,
+            "Surprise": 0.037
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:48:00",
+        "aggregated_emotions": {
+            "Anger": 0.126,
+            "Fear": 0.081,
+            "Happy": 0.018,
+            "Neutral": 0.146,
+            "Sad": 0.594,
+            "Surprise": 0.035
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:49:00",
+        "aggregated_emotions": {
+            "Anger": 0.03,
+            "Fear": 0.091,
+            "Happy": 0.065,
+            "Neutral": 0.123,
+            "Sad": 0.572,
+            "Surprise": 0.119
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:50:00",
+        "aggregated_emotions": {
+            "Anger": 0.066,
+            "Fear": 0.109,
+            "Happy": 0.06,
+            "Neutral": 0.093,
+            "Sad": 0.583,
+            "Surprise": 0.089
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:51:00",
+        "aggregated_emotions": {
+            "Anger": 0.165,
+            "Fear": 0.088,
+            "Happy": 0.1,
+            "Neutral": 0.022,
+            "Sad": 0.468,
+            "Surprise": 0.157
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:52:00",
+        "aggregated_emotions": {
+            "Anger": 0.112,
+            "Fear": 0.105,
+            "Happy": 0.047,
+            "Neutral": 0.104,
+            "Sad": 0.583,
+            "Surprise": 0.049
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:53:00",
+        "aggregated_emotions": {
+            "Anger": 0.057,
+            "Fear": 0.092,
+            "Happy": 0.077,
+            "Neutral": 0.177,
+            "Sad": 0.436,
+            "Surprise": 0.161
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:54:00",
+        "aggregated_emotions": {
+            "Anger": 0.015,
+            "Fear": 0.129,
+            "Happy": 0.13,
+            "Neutral": 0.053,
+            "Sad": 0.56,
+            "Surprise": 0.113
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:55:00",
+        "aggregated_emotions": {
+            "Anger": 0.195,
+            "Fear": 0.007,
+            "Happy": 0.076,
+            "Neutral": 0.163,
+            "Sad": 0.513,
+            "Surprise": 0.046
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:56:00",
+        "aggregated_emotions": {
+            "Anger": 0.204,
+            "Fear": 0.12,
+            "Happy": 0.017,
+            "Neutral": 0.003,
+            "Sad": 0.579,
+            "Surprise": 0.077
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:57:00",
+        "aggregated_emotions": {
+            "Anger": 0.041,
+            "Fear": 0.113,
+            "Happy": 0.136,
+            "Neutral": 0.168,
+            "Sad": 0.526,
+            "Surprise": 0.016
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:58:00",
+        "aggregated_emotions": {
+            "Anger": 0.112,
+            "Fear": 0.096,
+            "Happy": 0.071,
+            "Neutral": 0.031,
+            "Sad": 0.596,
+            "Surprise": 0.094
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 20:59:00",
+        "aggregated_emotions": {
+            "Anger": 0.091,
+            "Fear": 0.056,
+            "Happy": 0.158,
+            "Neutral": 0.169,
+            "Sad": 0.408,
+            "Surprise": 0.118
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:00:00",
+        "aggregated_emotions": {
+            "Anger": 0.148,
+            "Fear": 0.177,
+            "Happy": 0.005,
+            "Neutral": 0.05,
+            "Sad": 0.451,
+            "Surprise": 0.169
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:01:00",
+        "aggregated_emotions": {
+            "Anger": 0.088,
+            "Fear": 0.009,
+            "Happy": 0.151,
+            "Neutral": 0.152,
+            "Sad": 0.547,
+            "Surprise": 0.053
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:02:00",
+        "aggregated_emotions": {
+            "Anger": 0.098,
+            "Fear": 0.175,
+            "Happy": 0.121,
+            "Neutral": 0.117,
+            "Sad": 0.447,
+            "Surprise": 0.042
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:03:00",
+        "aggregated_emotions": {
+            "Anger": 0.124,
+            "Fear": 0.007,
+            "Happy": 0.126,
+            "Neutral": 0.058,
+            "Sad": 0.54,
+            "Surprise": 0.145
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:04:00",
+        "aggregated_emotions": {
+            "Anger": 0.06,
+            "Fear": 0.113,
+            "Happy": 0.04,
+            "Neutral": 0.157,
+            "Sad": 0.558,
+            "Surprise": 0.072
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:05:00",
+        "aggregated_emotions": {
+            "Anger": 0.134,
+            "Fear": 0.109,
+            "Happy": 0.073,
+            "Neutral": 0.022,
+            "Sad": 0.566,
+            "Surprise": 0.096
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:06:00",
+        "aggregated_emotions": {
+            "Anger": 0.294,
+            "Fear": 0.038,
+            "Happy": 0.067,
+            "Neutral": 0.021,
+            "Sad": 0.482,
+            "Surprise": 0.098
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:07:00",
+        "aggregated_emotions": {
+            "Anger": 0.046,
+            "Fear": 0.401,
+            "Happy": 0.027,
+            "Neutral": 0.106,
+            "Sad": 0.403,
+            "Surprise": 0.017
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:08:00",
+        "aggregated_emotions": {
+            "Anger": 0.137,
+            "Fear": 0.126,
+            "Happy": 0.039,
+            "Neutral": 0.143,
+            "Sad": 0.469,
+            "Surprise": 0.086
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:09:00",
+        "aggregated_emotions": {
+            "Anger": 0.052,
+            "Fear": 0.109,
+            "Happy": 0.021,
+            "Neutral": 0.172,
+            "Sad": 0.562,
+            "Surprise": 0.084
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:10:00",
+        "aggregated_emotions": {
+            "Anger": 0.112,
+            "Fear": 0.094,
+            "Happy": 0.025,
+            "Neutral": 0.116,
+            "Sad": 0.561,
+            "Surprise": 0.092
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:11:00",
+        "aggregated_emotions": {
+            "Anger": 0.213,
+            "Fear": 0.03,
+            "Happy": 0.092,
+            "Neutral": 0.123,
+            "Sad": 0.533,
+            "Surprise": 0.009
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:12:00",
+        "aggregated_emotions": {
+            "Anger": 0.147,
+            "Fear": 0.101,
+            "Happy": 0.093,
+            "Neutral": 0.099,
+            "Sad": 0.448,
+            "Surprise": 0.112
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:13:00",
+        "aggregated_emotions": {
+            "Anger": 0.059,
+            "Fear": 0.042,
+            "Happy": 0.129,
+            "Neutral": 0.108,
+            "Sad": 0.566,
+            "Surprise": 0.096
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:14:00",
+        "aggregated_emotions": {
+            "Anger": 0.166,
+            "Fear": 0.037,
+            "Happy": 0.028,
+            "Neutral": 0.129,
+            "Sad": 0.446,
+            "Surprise": 0.194
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:15:00",
+        "aggregated_emotions": {
+            "Anger": 0.143,
+            "Fear": 0.033,
+            "Happy": 0.117,
+            "Neutral": 0.174,
+            "Sad": 0.428,
+            "Surprise": 0.105
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:16:00",
+        "aggregated_emotions": {
+            "Anger": 0.039,
+            "Fear": 0.047,
+            "Happy": 0.135,
+            "Neutral": 0.112,
+            "Sad": 0.583,
+            "Surprise": 0.084
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:17:00",
+        "aggregated_emotions": {
+            "Anger": 0.128,
+            "Fear": 0.063,
+            "Happy": 0.121,
+            "Neutral": 0.122,
+            "Sad": 0.438,
+            "Surprise": 0.128
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:18:00",
+        "aggregated_emotions": {
+            "Anger": 0.054,
+            "Fear": 0.186,
+            "Happy": 0.173,
+            "Neutral": 0.151,
+            "Sad": 0.421,
+            "Surprise": 0.015
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:19:00",
+        "aggregated_emotions": {
+            "Anger": 0.151,
+            "Fear": 0.08,
+            "Happy": 0.251,
+            "Neutral": 0.061,
+            "Sad": 0.428,
+            "Surprise": 0.029
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:20:00",
+        "aggregated_emotions": {
+            "Anger": 0.146,
+            "Fear": 0.117,
+            "Happy": 0.136,
+            "Neutral": 0.116,
+            "Sad": 0.451,
+            "Surprise": 0.034
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:21:00",
+        "aggregated_emotions": {
+            "Anger": 0.153,
+            "Fear": 0.027,
+            "Happy": 0.13,
+            "Neutral": 0.11,
+            "Sad": 0.568,
+            "Surprise": 0.012
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:22:00",
+        "aggregated_emotions": {
+            "Anger": 0.01,
+            "Fear": 0.079,
+            "Happy": 0.23,
+            "Neutral": 0.07,
+            "Sad": 0.455,
+            "Surprise": 0.156
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:23:00",
+        "aggregated_emotions": {
+            "Anger": 0.081,
+            "Fear": 0.142,
+            "Happy": 0.118,
+            "Neutral": 0.078,
+            "Sad": 0.46,
+            "Surprise": 0.121
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:24:00",
+        "aggregated_emotions": {
+            "Anger": 0.071,
+            "Fear": 0.06,
+            "Happy": 0.037,
+            "Neutral": 0.122,
+            "Sad": 0.588,
+            "Surprise": 0.122
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:25:00",
+        "aggregated_emotions": {
+            "Anger": 0.021,
+            "Fear": 0.125,
+            "Happy": 0.175,
+            "Neutral": 0.195,
+            "Sad": 0.433,
+            "Surprise": 0.051
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:26:00",
+        "aggregated_emotions": {
+            "Anger": 0.14,
+            "Fear": 0.131,
+            "Happy": 0.039,
+            "Neutral": 0.037,
+            "Sad": 0.569,
+            "Surprise": 0.084
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:27:00",
+        "aggregated_emotions": {
+            "Anger": 0.006,
+            "Fear": 0.148,
+            "Happy": 0.148,
+            "Neutral": 0.065,
+            "Sad": 0.525,
+            "Surprise": 0.108
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:28:00",
+        "aggregated_emotions": {
+            "Anger": 0.04,
+            "Fear": 0.114,
+            "Happy": 0.122,
+            "Neutral": 0.1,
+            "Sad": 0.566,
+            "Surprise": 0.058
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:29:00",
+        "aggregated_emotions": {
+            "Anger": 0.146,
+            "Fear": 0.05,
+            "Happy": 0.129,
+            "Neutral": 0.146,
+            "Sad": 0.437,
+            "Surprise": 0.092
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:30:00",
+        "aggregated_emotions": {
+            "Anger": 0.053,
+            "Fear": 0.102,
+            "Happy": 0.065,
+            "Neutral": 0.122,
+            "Sad": 0.581,
+            "Surprise": 0.077
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:31:00",
+        "aggregated_emotions": {
+            "Anger": 0.036,
+            "Fear": 0.079,
+            "Happy": 0.15,
+            "Neutral": 0.102,
+            "Sad": 0.491,
+            "Surprise": 0.142
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:32:00",
+        "aggregated_emotions": {
+            "Anger": 0.098,
+            "Fear": 0.039,
+            "Happy": 0.084,
+            "Neutral": 0.095,
+            "Sad": 0.567,
+            "Surprise": 0.117
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:33:00",
+        "aggregated_emotions": {
+            "Anger": 0.038,
+            "Fear": 0.164,
+            "Happy": 0.076,
+            "Neutral": 0.035,
+            "Sad": 0.483,
+            "Surprise": 0.204
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:34:00",
+        "aggregated_emotions": {
+            "Anger": 0.094,
+            "Fear": 0.057,
+            "Happy": 0.118,
+            "Neutral": 0.088,
+            "Sad": 0.515,
+            "Surprise": 0.128
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:35:00",
+        "aggregated_emotions": {
+            "Anger": 0.085,
+            "Fear": 0.186,
+            "Happy": 0.043,
+            "Neutral": 0.161,
+            "Sad": 0.419,
+            "Surprise": 0.106
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:36:00",
+        "aggregated_emotions": {
+            "Anger": 0.178,
+            "Fear": 0.085,
+            "Happy": 0.004,
+            "Neutral": 0.183,
+            "Sad": 0.489,
+            "Surprise": 0.061
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:37:00",
+        "aggregated_emotions": {
+            "Anger": 0.058,
+            "Fear": 0.037,
+            "Happy": 0.006,
+            "Neutral": 0.161,
+            "Sad": 0.582,
+            "Surprise": 0.156
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:38:00",
+        "aggregated_emotions": {
+            "Anger": 0.093,
+            "Fear": 0.124,
+            "Happy": 0.117,
+            "Neutral": 0.121,
+            "Sad": 0.463,
+            "Surprise": 0.082
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:39:00",
+        "aggregated_emotions": {
+            "Anger": 0.059,
+            "Fear": 0.128,
+            "Happy": 0.042,
+            "Neutral": 0.061,
+            "Sad": 0.528,
+            "Surprise": 0.182
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:40:00",
+        "aggregated_emotions": {
+            "Anger": 0.113,
+            "Fear": 0.128,
+            "Happy": 0.068,
+            "Neutral": 0.091,
+            "Sad": 0.476,
+            "Surprise": 0.124
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:41:00",
+        "aggregated_emotions": {
+            "Anger": 0.11,
+            "Fear": 0.053,
+            "Happy": 0.108,
+            "Neutral": 0.115,
+            "Sad": 0.56,
+            "Surprise": 0.054
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:42:00",
+        "aggregated_emotions": {
+            "Anger": 0.115,
+            "Fear": 0.095,
+            "Happy": 0.031,
+            "Neutral": 0.119,
+            "Sad": 0.502,
+            "Surprise": 0.138
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:43:00",
+        "aggregated_emotions": {
+            "Anger": 0.122,
+            "Fear": 0.135,
+            "Happy": 0.091,
+            "Neutral": 0.085,
+            "Sad": 0.559,
+            "Surprise": 0.008
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:44:00",
+        "aggregated_emotions": {
+            "Anger": 0.207,
+            "Fear": 0.229,
+            "Happy": 0.051,
+            "Neutral": 0.072,
+            "Sad": 0.422,
+            "Surprise": 0.019
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:45:00",
+        "aggregated_emotions": {
+            "Anger": 0.046,
+            "Fear": 0.024,
+            "Happy": 0.05,
+            "Neutral": 0.213,
+            "Sad": 0.539,
+            "Surprise": 0.128
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:46:00",
+        "aggregated_emotions": {
+            "Anger": 0.16,
+            "Fear": 0.005,
+            "Happy": 0.031,
+            "Neutral": 0.243,
+            "Sad": 0.546,
+            "Surprise": 0.015
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:47:00",
+        "aggregated_emotions": {
+            "Anger": 0.115,
+            "Fear": 0.071,
+            "Happy": 0.105,
+            "Neutral": 0.048,
+            "Sad": 0.591,
+            "Surprise": 0.07
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:48:00",
+        "aggregated_emotions": {
+            "Anger": 0.149,
+            "Fear": 0.066,
+            "Happy": 0.127,
+            "Neutral": 0.08,
+            "Sad": 0.51,
+            "Surprise": 0.068
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:49:00",
+        "aggregated_emotions": {
+            "Anger": 0.065,
+            "Fear": 0.065,
+            "Happy": 0.101,
+            "Neutral": 0.145,
+            "Sad": 0.483,
+            "Surprise": 0.141
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:50:00",
+        "aggregated_emotions": {
+            "Anger": 0.111,
+            "Fear": 0.079,
+            "Happy": 0.054,
+            "Neutral": 0.129,
+            "Sad": 0.496,
+            "Surprise": 0.131
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:51:00",
+        "aggregated_emotions": {
+            "Anger": 0.015,
+            "Fear": 0.138,
+            "Happy": 0.192,
+            "Neutral": 0.141,
+            "Sad": 0.446,
+            "Surprise": 0.068
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:52:00",
+        "aggregated_emotions": {
+            "Anger": 0.043,
+            "Fear": 0.043,
+            "Happy": 0.085,
+            "Neutral": 0.232,
+            "Sad": 0.411,
+            "Surprise": 0.186
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:53:00",
+        "aggregated_emotions": {
+            "Anger": 0.058,
+            "Fear": 0.065,
+            "Happy": 0.097,
+            "Neutral": 0.122,
+            "Sad": 0.596,
+            "Surprise": 0.062
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:54:00",
+        "aggregated_emotions": {
+            "Anger": 0.072,
+            "Fear": 0.064,
+            "Happy": 0.166,
+            "Neutral": 0.109,
+            "Sad": 0.575,
+            "Surprise": 0.014
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:55:00",
+        "aggregated_emotions": {
+            "Anger": 0.012,
+            "Fear": 0.074,
+            "Happy": 0.143,
+            "Neutral": 0.154,
+            "Sad": 0.492,
+            "Surprise": 0.125
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:56:00",
+        "aggregated_emotions": {
+            "Anger": 0.091,
+            "Fear": 0.031,
+            "Happy": 0.177,
+            "Neutral": 0.015,
+            "Sad": 0.516,
+            "Surprise": 0.17
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:57:00",
+        "aggregated_emotions": {
+            "Anger": 0.185,
+            "Fear": 0.054,
+            "Happy": 0.181,
+            "Neutral": 0.045,
+            "Sad": 0.436,
+            "Surprise": 0.099
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:58:00",
+        "aggregated_emotions": {
+            "Anger": 0.052,
+            "Fear": 0.174,
+            "Happy": 0.084,
+            "Neutral": 0.177,
+            "Sad": 0.416,
+            "Surprise": 0.097
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 21:59:00",
+        "aggregated_emotions": {
+            "Anger": 0.079,
+            "Fear": 0.137,
+            "Happy": 0.188,
+            "Neutral": 0.139,
+            "Sad": 0.454,
+            "Surprise": 0.003
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:00:00",
+        "aggregated_emotions": {
+            "Anger": 0.021,
+            "Fear": 0.129,
+            "Happy": 0.115,
+            "Neutral": 0.121,
+            "Sad": 0.499,
+            "Surprise": 0.115
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:01:00",
+        "aggregated_emotions": {
+            "Anger": 0.01,
+            "Fear": 0.221,
+            "Happy": 0.164,
+            "Neutral": 0.08,
+            "Sad": 0.475,
+            "Surprise": 0.05
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:02:00",
+        "aggregated_emotions": {
+            "Anger": 0.009,
+            "Fear": 0.019,
+            "Happy": 0.205,
+            "Neutral": 0.045,
+            "Sad": 0.561,
+            "Surprise": 0.161
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:03:00",
+        "aggregated_emotions": {
+            "Anger": 0.131,
+            "Fear": 0.143,
+            "Happy": 0.055,
+            "Neutral": 0.121,
+            "Sad": 0.432,
+            "Surprise": 0.118
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:04:00",
+        "aggregated_emotions": {
+            "Anger": 0.114,
+            "Fear": 0.069,
+            "Happy": 0.149,
+            "Neutral": 0.2,
+            "Sad": 0.466,
+            "Surprise": 0.002
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:05:00",
+        "aggregated_emotions": {
+            "Anger": 0.186,
+            "Fear": 0.123,
+            "Happy": 0.011,
+            "Neutral": 0.018,
+            "Sad": 0.507,
+            "Surprise": 0.155
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:06:00",
+        "aggregated_emotions": {
+            "Anger": 0.129,
+            "Fear": 0.118,
+            "Happy": 0.093,
+            "Neutral": 0.064,
+            "Sad": 0.465,
+            "Surprise": 0.131
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:07:00",
+        "aggregated_emotions": {
+            "Anger": 0.137,
+            "Fear": 0.106,
+            "Happy": 0.152,
+            "Neutral": 0.032,
+            "Sad": 0.511,
+            "Surprise": 0.062
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:08:00",
+        "aggregated_emotions": {
+            "Anger": 0.186,
+            "Fear": 0.048,
+            "Happy": 0.164,
+            "Neutral": 0.067,
+            "Sad": 0.504,
+            "Surprise": 0.031
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:09:00",
+        "aggregated_emotions": {
+            "Anger": 0.148,
+            "Fear": 0.144,
+            "Happy": 0.125,
+            "Neutral": 0.031,
+            "Sad": 0.463,
+            "Surprise": 0.089
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:10:00",
+        "aggregated_emotions": {
+            "Anger": 0.054,
+            "Fear": 0.009,
+            "Happy": 0.201,
+            "Neutral": 0.171,
+            "Sad": 0.503,
+            "Surprise": 0.062
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:11:00",
+        "aggregated_emotions": {
+            "Anger": 0.043,
+            "Fear": 0.023,
+            "Happy": 0.152,
+            "Neutral": 0.122,
+            "Sad": 0.526,
+            "Surprise": 0.134
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:12:00",
+        "aggregated_emotions": {
+            "Anger": 0.152,
+            "Fear": 0.092,
+            "Happy": 0.078,
+            "Neutral": 0.151,
+            "Sad": 0.479,
+            "Surprise": 0.048
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:13:00",
+        "aggregated_emotions": {
+            "Anger": 0.039,
+            "Fear": 0.167,
+            "Happy": 0.136,
+            "Neutral": 0.111,
+            "Sad": 0.524,
+            "Surprise": 0.023
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:14:00",
+        "aggregated_emotions": {
+            "Anger": 0.106,
+            "Fear": 0.165,
+            "Happy": 0.088,
+            "Neutral": 0.163,
+            "Sad": 0.453,
+            "Surprise": 0.025
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:15:00",
+        "aggregated_emotions": {
+            "Anger": 0.158,
+            "Fear": 0.133,
+            "Happy": 0.076,
+            "Neutral": 0.175,
+            "Sad": 0.454,
+            "Surprise": 0.004
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:16:00",
+        "aggregated_emotions": {
+            "Anger": 0.083,
+            "Fear": 0.06,
+            "Happy": 0.124,
+            "Neutral": 0.12,
+            "Sad": 0.52,
+            "Surprise": 0.093
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:17:00",
+        "aggregated_emotions": {
+            "Anger": 0.107,
+            "Fear": 0.126,
+            "Happy": 0.127,
+            "Neutral": 0.029,
+            "Sad": 0.441,
+            "Surprise": 0.17
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:18:00",
+        "aggregated_emotions": {
+            "Anger": 0.156,
+            "Fear": 0.012,
+            "Happy": 0.144,
+            "Neutral": 0.162,
+            "Sad": 0.447,
+            "Surprise": 0.079
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:19:00",
+        "aggregated_emotions": {
+            "Anger": 0.109,
+            "Fear": 0.068,
+            "Happy": 0.096,
+            "Neutral": 0.019,
+            "Sad": 0.504,
+            "Surprise": 0.204
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:20:00",
+        "aggregated_emotions": {
+            "Anger": 0.029,
+            "Fear": 0.096,
+            "Happy": 0.118,
+            "Neutral": 0.124,
+            "Sad": 0.47,
+            "Surprise": 0.163
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:21:00",
+        "aggregated_emotions": {
+            "Anger": 0.031,
+            "Fear": 0.177,
+            "Happy": 0.19,
+            "Neutral": 0.02,
+            "Sad": 0.563,
+            "Surprise": 0.019
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:22:00",
+        "aggregated_emotions": {
+            "Anger": 0.069,
+            "Fear": 0.144,
+            "Happy": 0.006,
+            "Neutral": 0.154,
+            "Sad": 0.422,
+            "Surprise": 0.205
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:23:00",
+        "aggregated_emotions": {
+            "Anger": 0.142,
+            "Fear": 0.095,
+            "Happy": 0.158,
+            "Neutral": 0.058,
+            "Sad": 0.531,
+            "Surprise": 0.016
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:24:00",
+        "aggregated_emotions": {
+            "Anger": 0.078,
+            "Fear": 0.062,
+            "Happy": 0.097,
+            "Neutral": 0.086,
+            "Sad": 0.527,
+            "Surprise": 0.15
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:25:00",
+        "aggregated_emotions": {
+            "Anger": 0.11,
+            "Fear": 0.112,
+            "Happy": 0.097,
+            "Neutral": 0.153,
+            "Sad": 0.415,
+            "Surprise": 0.113
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:26:00",
+        "aggregated_emotions": {
+            "Anger": 0.075,
+            "Fear": 0.045,
+            "Happy": 0.077,
+            "Neutral": 0.117,
+            "Sad": 0.599,
+            "Surprise": 0.087
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:27:00",
+        "aggregated_emotions": {
+            "Anger": 0.171,
+            "Fear": 0.083,
+            "Happy": 0.061,
+            "Neutral": 0.027,
+            "Sad": 0.595,
+            "Surprise": 0.063
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:28:00",
+        "aggregated_emotions": {
+            "Anger": 0.051,
+            "Fear": 0.027,
+            "Happy": 0.127,
+            "Neutral": 0.174,
+            "Sad": 0.453,
+            "Surprise": 0.168
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:29:00",
+        "aggregated_emotions": {
+            "Anger": 0.06,
+            "Fear": 0.144,
+            "Happy": 0.161,
+            "Neutral": 0.136,
+            "Sad": 0.451,
+            "Surprise": 0.048
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:30:00",
+        "aggregated_emotions": {
+            "Anger": 0.181,
+            "Fear": 0.056,
+            "Happy": 0.112,
+            "Neutral": 0.07,
+            "Sad": 0.549,
+            "Surprise": 0.032
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:31:00",
+        "aggregated_emotions": {
+            "Anger": 0.177,
+            "Fear": 0.056,
+            "Happy": 0.039,
+            "Neutral": 0.222,
+            "Sad": 0.483,
+            "Surprise": 0.023
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:32:00",
+        "aggregated_emotions": {
+            "Anger": 0.042,
+            "Fear": 0.023,
+            "Happy": 0.135,
+            "Neutral": 0.153,
+            "Sad": 0.505,
+            "Surprise": 0.142
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:33:00",
+        "aggregated_emotions": {
+            "Anger": 0.023,
+            "Fear": 0.279,
+            "Happy": 0.214,
+            "Neutral": 0.023,
+            "Sad": 0.402,
+            "Surprise": 0.059
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:34:00",
+        "aggregated_emotions": {
+            "Anger": 0.234,
+            "Fear": 0.037,
+            "Happy": 0.107,
+            "Neutral": 0.11,
+            "Sad": 0.484,
+            "Surprise": 0.028
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:35:00",
+        "aggregated_emotions": {
+            "Anger": 0.092,
+            "Fear": 0.085,
+            "Happy": 0.06,
+            "Neutral": 0.097,
+            "Sad": 0.554,
+            "Surprise": 0.112
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:36:00",
+        "aggregated_emotions": {
+            "Anger": 0.081,
+            "Fear": 0.136,
+            "Happy": 0.012,
+            "Neutral": 0.185,
+            "Sad": 0.542,
+            "Surprise": 0.044
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:37:00",
+        "aggregated_emotions": {
+            "Anger": 0.117,
+            "Fear": 0.096,
+            "Happy": 0.103,
+            "Neutral": 0.119,
+            "Sad": 0.489,
+            "Surprise": 0.076
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:38:00",
+        "aggregated_emotions": {
+            "Anger": 0.201,
+            "Fear": 0.172,
+            "Happy": 0.022,
+            "Neutral": 0.064,
+            "Sad": 0.428,
+            "Surprise": 0.113
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:39:00",
+        "aggregated_emotions": {
+            "Anger": 0.183,
+            "Fear": 0.054,
+            "Happy": 0.115,
+            "Neutral": 0.126,
+            "Sad": 0.434,
+            "Surprise": 0.088
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:40:00",
+        "aggregated_emotions": {
+            "Anger": 0.163,
+            "Fear": 0.075,
+            "Happy": 0.141,
+            "Neutral": 0.068,
+            "Sad": 0.479,
+            "Surprise": 0.074
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:41:00",
+        "aggregated_emotions": {
+            "Anger": 0.069,
+            "Fear": 0.066,
+            "Happy": 0.144,
+            "Neutral": 0.158,
+            "Sad": 0.454,
+            "Surprise": 0.109
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:42:00",
+        "aggregated_emotions": {
+            "Anger": 0.26,
+            "Fear": 0.021,
+            "Happy": 0.009,
+            "Neutral": 0.159,
+            "Sad": 0.512,
+            "Surprise": 0.039
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:43:00",
+        "aggregated_emotions": {
+            "Anger": 0.147,
+            "Fear": 0.135,
+            "Happy": 0.14,
+            "Neutral": 0.005,
+            "Sad": 0.541,
+            "Surprise": 0.032
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:44:00",
+        "aggregated_emotions": {
+            "Anger": 0.077,
+            "Fear": 0.177,
+            "Happy": 0.073,
+            "Neutral": 0.042,
+            "Sad": 0.601,
+            "Surprise": 0.03
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:45:00",
+        "aggregated_emotions": {
+            "Anger": 0.082,
+            "Fear": 0.068,
+            "Happy": 0.109,
+            "Neutral": 0.101,
+            "Sad": 0.452,
+            "Surprise": 0.188
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:46:00",
+        "aggregated_emotions": {
+            "Anger": 0.066,
+            "Fear": 0.17,
+            "Happy": 0.043,
+            "Neutral": 0.123,
+            "Sad": 0.533,
+            "Surprise": 0.065
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:47:00",
+        "aggregated_emotions": {
+            "Anger": 0.095,
+            "Fear": 0.059,
+            "Happy": 0.099,
+            "Neutral": 0.181,
+            "Sad": 0.449,
+            "Surprise": 0.117
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:48:00",
+        "aggregated_emotions": {
+            "Anger": 0.007,
+            "Fear": 0.139,
+            "Happy": 0.033,
+            "Neutral": 0.079,
+            "Sad": 0.594,
+            "Surprise": 0.148
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:49:00",
+        "aggregated_emotions": {
+            "Anger": 0.214,
+            "Fear": 0.111,
+            "Happy": 0.178,
+            "Neutral": 0.053,
+            "Sad": 0.443,
+            "Surprise": 0.001
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:50:00",
+        "aggregated_emotions": {
+            "Anger": 0.013,
+            "Fear": 0.101,
+            "Happy": 0.038,
+            "Neutral": 0.307,
+            "Sad": 0.409,
+            "Surprise": 0.132
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:51:00",
+        "aggregated_emotions": {
+            "Anger": 0.201,
+            "Fear": 0.058,
+            "Happy": 0.063,
+            "Neutral": 0.054,
+            "Sad": 0.458,
+            "Surprise": 0.166
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:52:00",
+        "aggregated_emotions": {
+            "Anger": 0.037,
+            "Fear": 0.106,
+            "Happy": 0.079,
+            "Neutral": 0.115,
+            "Sad": 0.51,
+            "Surprise": 0.153
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:53:00",
+        "aggregated_emotions": {
+            "Anger": 0.122,
+            "Fear": 0.045,
+            "Happy": 0.097,
+            "Neutral": 0.167,
+            "Sad": 0.514,
+            "Surprise": 0.055
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:54:00",
+        "aggregated_emotions": {
+            "Anger": 0.099,
+            "Fear": 0.159,
+            "Happy": 0.086,
+            "Neutral": 0.053,
+            "Sad": 0.525,
+            "Surprise": 0.078
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:55:00",
+        "aggregated_emotions": {
+            "Anger": 0.154,
+            "Fear": 0.074,
+            "Happy": 0.075,
+            "Neutral": 0.14,
+            "Sad": 0.536,
+            "Surprise": 0.021
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:56:00",
+        "aggregated_emotions": {
+            "Anger": 0.03,
+            "Fear": 0.045,
+            "Happy": 0.207,
+            "Neutral": 0.124,
+            "Sad": 0.423,
+            "Surprise": 0.171
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:57:00",
+        "aggregated_emotions": {
+            "Anger": 0.116,
+            "Fear": 0.089,
+            "Happy": 0.077,
+            "Neutral": 0.126,
+            "Sad": 0.495,
+            "Surprise": 0.097
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:58:00",
+        "aggregated_emotions": {
+            "Anger": 0.056,
+            "Fear": 0.326,
+            "Happy": 0.01,
+            "Neutral": 0.022,
+            "Sad": 0.513,
+            "Surprise": 0.073
+        },
+        "session_used": true,
+        "session_used_hour": true
+    },
+    {
+        "timestamp": "2025-03-17 22:59:00",
+        "aggregated_emotions": {
+            "Anger": 0.154,
+            "Fear": 0.163,
+            "Happy": 0.039,
+            "Neutral": 0.077,
+            "Sad": 0.475,
+            "Surprise": 0.092
+        },
+        "session_used": true,
+        "session_used_hour": true
+    }
+]
