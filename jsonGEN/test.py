@@ -43,7 +43,7 @@ def generate_emotion_data(start_time, num_minutes):
         entry = {
             "timestamp": current_time.strftime("%Y-%m-%d %H:%M:%S"),
             "aggregated_emotions": aggregated_emotions,
-            "session_used": True,
+            "session_used": True, 
             "session_used_hour": True
         }
         data.append(entry)
