@@ -50,7 +50,7 @@ def generate_emotion_data(start_time, num_minutes):
         current_time += timedelta(minutes=1)
     return data
 
-def aggregate_sessions(data, group_size):
+def aggregate_sessions(data, group_size): 
     """
     Aggregates emotion data in groups.
     :param data: List of minute-level entries.
